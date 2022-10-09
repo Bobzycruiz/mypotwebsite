@@ -1,0 +1,569 @@
+:root{
+
+    --box-shadow01:
+    8px 8px 12px #151618,
+    2px 2px 10px #2c3136,
+    inset 2px 2px 3px #33353b,
+    inset -2px -2px 3px #151618;
+
+    --box-shadow02:
+    10px 10px 12px #151618,
+    -10px -10px 12px #222529,
+    inset 8px 4px 8px #33353b,
+    inset -4px -4px 8px #151618;
+
+    --box-shadow03:
+    3px 3px 7px #151618,
+    -3px -4px 6px #2c3136,
+    inset -4px -4px 8px #33353b,
+    inset 4px 4px 8px #151618;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    animation: Opacity 500ms 1 linear;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    background-color: #eff4fd;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #eff4fd 59px ), repeating-linear-gradient( #b4b4b42a, #eff4fd );
+    background-size:cover;
+}
+nav{
+    display: flex;
+    /* border: 3px solid black; */
+    max-width: calc(100% - 200px);
+    height: 80px;
+    margin: auto;
+    padding: 1% 2%;
+    align-items: center;
+    justify-content:space-between;
+}
+nav h1{
+    font-size: 50px;
+    color: white;
+    background: url(../images/bobzycruizlogo.png);
+    background-size: cover;
+    background-position: center;
+    height: 75pt;
+    width: 140pt;
+    text-indent: -9999px;
+    margin: 2%;
+}
+nav ul li{
+    display: inline-flex;
+    list-style: none;
+    margin: 10px 20px;
+    text-transform: uppercase
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover {
+color: rgb(19, 112, 0);
+transition: 200ms ease;
+}
+ nav ul.icons{
+    display: none;
+ }
+
+.details {
+    padding: 2%;
+    margin: 15% 8% 0 8%;
+}
+.details h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-bottom: 10px;
+}
+span{
+    color: rgb(0, 182, 0);
+}
+
+.details p{
+    color: rgb(27, 27, 27);
+    width: 500px;
+    margin-right: 20px;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.details a{
+    background: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(184, 255, 184);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow03);
+}
+.details a:hover{
+    transform: scale(1.05);
+    transition: 200ms ease;
+    background: rgb(12, 12, 12);
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom:0;
+    right: 60px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left:60%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 1s, left 1s;
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .me{
+    left: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+.outro{
+    padding: 4%;
+    background: rgb(12, 12, 12);
+    /* border-top: 2px solid rgba(44, 44, 44, 0.116); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.outro h1{
+    font-size: 50px;
+    color: white;
+    background: url(../images/bobzycruizlogo.png);
+    background-size: cover;
+    background-position: center;
+    height: 50pt;
+    width: 130pt;
+    text-indent: -9999px;
+}
+
+
+.outro .icons{
+    padding-left: 15%;
+}
+.outro .icons .btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    background: rgb(51, 51, 51);
+    box-shadow: 0 5px 15px -5px rgb(0, 0, 0);
+    margin:10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: rgb(0, 217, 255);
+}
+.icons .btn i {
+    position: relative;
+    z-index: 4;
+    line-height: 60px;
+    font-size: 20px;
+    padding-left: 12px;
+    transition: 300ms ease-in-out;
+}
+.outro .icons .btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(#3ba7ff, #2000d6 );
+    transform: rotate(45deg);
+    left: -110%;
+    top:90%;
+}
+.outro .icons .btn:hover{
+    color: rgb(155, 243, 104);
+    transform: scale(1.2);
+}
+.outro .icons .btn:hover::before {
+    animation: onHover 0.7s 1;
+    left: -10%;
+    top: -10%;
+}
+.footer{
+    display: flex;
+    background: rgb(12, 12, 12);
+    padding: 1%;
+    justify-content: space-between;
+}
+.footer ul{
+display: flex;
+list-style: none;
+padding: 1% 6%;
+}
+.footer ul li{
+    font-size: 13px;
+    padding: 12px;
+    color: rgb(126, 117, 134);
+}
+.left_footer p{
+    text-align: right;
+    font-size: 12px;
+    padding-right:50px;
+
+    line-height: 25px;
+    color: rgb(164, 150, 177);
+}
+.footer ul li:hover{
+    color: #02489e;
+    transition: 300ms ease-in-out;
+}
+
+
+
+/* responsiveness */
+
+@media only screen and (max-width: 900px){
+    nav{
+        max-width: calc(100% - 70px);
+        justify-items: center;
+    }
+    nav h1{
+        height: 65pt;
+        width: 125pt;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+    nav ul.icons{
+        display:inline-flex;
+        align-items: center;
+     }
+     nav ul.links{
+        display: none;
+     }
+     nav ul.icons li a{
+        font-size: 20px;
+     }
+     .images{
+        width: 40%;
+        height: 70%;
+        position: absolute;
+        right: 40px;
+    }
+    .details {
+        padding: 2%;
+        margin: 15% 4% 0 4%;
+    }
+    .details h1{
+        font-size: 40px;
+    }
+    .details p{
+        width: 400px;
+        font-size: 16px;
+    }
+    .details a{
+        width: 120px;
+        line-height: 12px;
+        font-size: 13px;
+        padding:12px 8px;
+    }
+    .outro .icons .btn{
+        height: 40px;
+        width: 40px;
+    }
+    .outro .icons i{
+        line-height: 40px;
+        padding-left: 5px;
+    }
+    .outro{
+        padding: 2%;
+    }
+    .outro h1{
+        height: 50pt;
+        width: 100pt;
+    }
+}
+        
+@media only screen and (max-width: 768px){
+    nav{
+        max-width: calc(100% - 40px);
+    }
+    nav h1{
+        height: 60pt;
+        width: 115pt;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+ 
+     .images{
+        width: 35%;
+        height: 65%;
+        right: 30px;
+    }
+    .details {
+        padding: 1%;
+        margin: 17% 3% 0 3%;
+    }
+    .details h1{
+        font-size: 38px;
+    }
+    .details p{
+        width: 380px;
+        font-size: 16px;
+    }
+    .footer ul{
+        flex-direction: column;
+    }
+    .footer .left_footer{
+        text-align: right;
+        align-self: flex-end;
+        padding: 1% 0;
+    }
+    .left_footer p{
+        padding-right: 10px;
+    }
+    .outro .icons .btn{
+        height: 35px;
+        width: 35px;
+    }
+    .outro .icons i{
+        line-height: 35px;
+        padding-left: 6px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .details h1{
+        font-size: 32px;
+    }
+    .details p{
+        font-size: 15px;
+        width: 290px;
+    }
+    .images{
+        height: 60%;
+    }
+    .details a{
+        transform: scale(.9);
+    }
+}
+@media only screen and (max-width: 450px){
+    nav{
+        max-width: calc(100% - 20px);
+    }
+    nav h1{
+        height: 50pt;
+        width: 95pt;
+    }
+    
+    nav ul li{
+        margin: 10px 10px;
+    }
+    nav ul.icons li a{
+        font-size: 18px;
+    }
+
+     .images{
+        width: 15%;
+        height: 45%;
+        right: 90px;
+    }
+    .details {
+        padding: 1%;
+        margin: 10% 3% 0 3%;
+    }
+    
+    
+    .details h1{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .details p{
+        width: 230px;
+        font-size: 14px;
+    }
+    .details a{
+        font-size: 11px;
+        line-height: 15px;
+        width: 100px;
+        padding: 5px;
+    }
+ 
+    .footer ul{
+        flex-direction: column;
+    }
+    .footer .left_footer{
+        text-align: right;
+        align-self: flex-end;
+        padding: 1% 0;
+    }
+    .left_footer p{
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    .outro .icons .btn{
+        height: 30px;
+        width: 30px;
+    }
+    .outro h1{
+        height: 30pt;
+        width: 85pt;
+    }
+    .outro .icons i{
+        line-height: 30px;
+        padding-left: 7px;
+        font-size: 18px;
+    }
+    .footer ul li{
+        line-height: 4px;
+        font-size: 11px;
+        padding-left: 0px;
+    }
+
+}
+@media only screen and (max-width: 395px){
+    .details h1{
+        font-size: 20px;
+    }
+
+    .details p{
+        font-size: 12px;
+        line-height: 20px;
+        width: 200px;
+    }
+    .details a{
+        transform: scale(.8);
+        margin: 20px 0;
+    }
+    .footer ul li{
+        line-height: 4px;
+        font-size: 11px;
+        padding-left: 0px;
+    }
+    .left_footer p{
+        font-size: 11px;
+    }
+    .outro .icons .btn{
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 395px){
+    .details h1{
+        font-size: 18px;
+    }
+
+    .details p{
+        font-size: 11px;
+        line-height: 20px;
+        width: 190px;
+    }
+    .details a{
+        transform: scale(.8);
+        margin: 18px 0;
+    }
+    .footer ul li{
+        line-height: 4px;
+        font-size: 11px;
+        padding-left: 0px;
+    }
+    .left_footer p{
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    nav h1{
+        height: 30pt;
+        width: 60pt;
+    }
+    nav ul.icons li{
+        margin: 10px 5px;
+    }
+    nav ul.icons li a{
+        font-size: 14px;
+    }
+    .details h1{
+        font-size: 16px;
+    }
+    .images{
+        width: 15%;
+        right: 15%;
+    }
+
+    .details p{
+        font-size: 10px;
+        line-height: 18px;
+        width: 180px;
+    }
+    .details a{
+        transform: scale(.7);
+        margin: 18px 0;
+    }
+    .outro h1{
+        height: 35t;
+        width: 60pt;
+    }
+
+    .footer ul li{
+        line-height: 3px;
+        font-size: 10px;
+        padding-left: 0px;
+    }
+    .left_footer p{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@keyframes Opacity {
+    0%{
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes onHover {
+    0%{
+        left:-110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
