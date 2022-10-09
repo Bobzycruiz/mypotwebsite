@@ -47,7 +47,7 @@ nav{
 nav h1{
     font-size: 50px;
     color: white;
-    background: url(../images/bobzycruizlogo.png);
+    background: url(images/bobzycruizlogo.png);
     background-size: cover;
     background-position: center;
     height: 75pt;
@@ -155,7 +155,7 @@ span{
 .outro h1{
     font-size: 50px;
     color: white;
-    background: url(../images/bobzycruizlogo.png);
+    background: url(images/bobzycruizlogo.png);
     background-size: cover;
     background-position: center;
     height: 50pt;
