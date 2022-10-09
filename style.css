@@ -79,7 +79,7 @@ transition: 200ms ease;
     margin: 15% 8% 0 8%;
 }
 .details h1{
-    font-size: 50px;
+    font-size: 45px;
     font-family: 'Poppins', sans-serif;
     color: black;
     margin-bottom: 10px;
@@ -90,7 +90,7 @@ span{
 
 .details p{
     color: rgb(27, 27, 27);
-    width: 480px;
+    width: 450px;
     margin-right: 20px;
     line-height: 30px;
     font-size: 18px;
